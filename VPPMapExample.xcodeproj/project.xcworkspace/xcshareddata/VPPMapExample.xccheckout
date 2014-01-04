@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DEBEB7FD-C278-4CBA-A566-ADC316E9FAC7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VPPMapExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F8759713-875F-49FA-8C0D-307F0B7C3CBA</key>
+		<string>https://github.com/cabosoft/VPPMap.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VPPMapExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F8759713-875F-49FA-8C0D-307F0B7C3CBA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/cabosoft-mobile/rxtrax-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F8759713-875F-49FA-8C0D-307F0B7C3CBA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F8759713-875F-49FA-8C0D-307F0B7C3CBA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VPPMap</string>
+		</dict>
+	</array>
+</dict>
+</plist>
