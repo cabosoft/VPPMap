@@ -541,7 +541,11 @@
 }
 
 - (void) mapView:(MKMapView *)mmapView regionDidChangeAnimated:(BOOL)animated {
-    if (self.shouldClusterPins && [_unfilteredPins count] != 0 && [self mapViewDidZoom:mmapView]) {
+	if (self.delegate && [self.delegate respondsToSelector:@selector(mapView:regionDidChangeAnimated:)]) {
+        [self.delegate mapView:mmapView regionDidChangeAnimated:animated];
+    }
+
+	if (self.shouldClusterPins && [_unfilteredPins count] != 0 && [self mapViewDidZoom:mmapView]) {
         VPPMapClusterHelper *mh = [[VPPMapClusterHelper alloc] initWithMapView:self.mapView];
         [mh clustersForAnnotations:_unfilteredPins distance:self.distanceBetweenPins completion:^(NSArray *data) {
 #if !__has_feature(objc_arc)
@@ -561,6 +565,17 @@
 
 #pragma mark - Managing annotations
 // sets all annotations and initializes map.
+
+- (void)removeAllAnnotations{
+	// removes all previous annotations
+	NSArray *annotations = [NSArray arrayWithArray:self.mapView.annotations];
+	[self.mapView removeAnnotations:annotations];
+		
+    if (self.shouldClusterPins) {
+        [_unfilteredPins removeAllObjects];
+    }
+}
+
 
 - (void)setMapAnnotations:(NSArray*)mapAnnotations {
 	// removes all previous annotations
