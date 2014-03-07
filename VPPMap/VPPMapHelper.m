@@ -344,7 +344,7 @@
 #endif
 		}
         
-        clusterView.title = [NSString stringWithFormat:@"%d",[[(VPPMapCluster*)annotation annotations] count]];
+        clusterView.title = [NSString stringWithFormat:@"%lu",(unsigned long)[[(VPPMapCluster*)annotation annotations] count]];
         clusterView.canShowCallout = NO;
         
         return clusterView;
